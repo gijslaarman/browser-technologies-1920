@@ -1,8 +1,9 @@
 # Testen van OBA 
-[Link naar mijn OBA project](https://github.com/gijslaarman/project-1-1920)
+### [Link to the project I'm testing](https://github.com/gijslaarman/project-1-1920)
 
 ## Table of contents
-
+- [Testing on devices](#testing-on-devices)
+- [Testing on browsers](#testing-on-browsers)
 
 ## Testing on devices
 
@@ -55,6 +56,7 @@ There are two ways to fix the javascript not being used:
 1. Use [Babel](https://babeljs.io/) to minify and make the javascript into one file.
 
 ## Testing on browsers
+So before I show the results per browser, we know the current issue occurs because of modern javascript. The mobile browsers can't understand the script being split up in modules. However the most modern browsers do support this. So I was not at all shocked by the result. 
 
 ### Chrome
 ![Testing on Chrome](img/chrome.gif)
@@ -64,3 +66,23 @@ There are two ways to fix the javascript not being used:
 
 ### Brave
 ![Testing on Brave](img/brave.gif)
+
+## Disabling javascript
+Easy as. Just doesn't work. The solution is "easy", make a fallback that when javascript doesn't load the submit gets handled serverside and you get redirected to a new page.
+
+## Custom fonts
+
+## Being color blind
+No issues here either. Mainly used black & white, with one red button, but the contrast is suffecient. Here is the score done by [Check my colours](https://checkmycolours.com):
+
+![]()
+
+## Mouse/trackpad not working.
+There's only one input field that is semantically correct, also because I reeeaally want it that way. If I fill in a form I want to type and be able to press enter! (Seriously a lot of my peers don't do this it's infuriating).
+
+So on page load:
+1. Press tab, get directed to input field
+2. Type a number
+3. Press enter
+4. **Profit!**
+
