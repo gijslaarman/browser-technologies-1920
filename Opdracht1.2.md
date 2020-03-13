@@ -4,6 +4,7 @@
 ## Table of contents
 - [Testing on devices](#testing-on-devices)
 - [Testing on browsers](#testing-on-browsers)
+- [Extra tests](#extra-tests)
 
 ## Testing on devices
 
@@ -67,17 +68,22 @@ So before I show the results per browser, we know the current issue occurs becau
 ### Brave
 ![Testing on Brave](img/brave.gif)
 
-## Disabling javascript
+## Extra tests
+
+### Disabling javascript
 Easy as. Just doesn't work. The solution is "easy", make a fallback that when javascript doesn't load the submit gets handled serverside and you get redirected to a new page.
 
-## Custom fonts
+### Custom fonts
+FontAwesome breaks, so the icon on the search button will be gone. Basically breaking the button because it has no indication of what the square does. A reasonable solution would be to use an SVG in there. But does that solve it for blind users?
 
-## Being color blind
+![no icons](img/noFA.jpg)
+
+### Being color blind
 No issues here either. Mainly used black & white, with one red button, but the contrast is suffecient. Here is the score done by [Check my colours](https://checkmycolours.com):
 
-![]()
+![Check my colours result](img/checkmycolour.jpg)
 
-## Mouse/trackpad not working.
+### Mouse/trackpad not working.
 There's only one input field that is semantically correct, also because I reeeaally want it that way. If I fill in a form I want to type and be able to press enter! (Seriously a lot of my peers don't do this it's infuriating).
 
 So on page load:
@@ -86,3 +92,26 @@ So on page load:
 3. Press enter
 4. **Profit!**
 
+### No broadband internet
+On first page load:
+![Speed of internet](img/speed.jpg)
+> Yeh not good.
+
+Let's be honest <400kb isn't that bad. Although fetching the pictures for each book is definitely going to be a bottleneck.
+
+Some fixes:
+- Don't load in FontAwesome's CDN (I was lazy + didn't have a lot of time).
+- Minify the javascript into one file, so it doesn't have to make individual requests.
+
+### No cookies
+Website doesn't use cookies.
+
+### No images
+Only the books use images. But they don't have alt texts. They do have meta data per article, that contain a lot of the data of the book cover.
+
+### Screenreader
+I made a very huge error that is easily fixable. In the HTML tag I set the `lang="en"` attribute. It's a dutch site, so the screenreader is trying it's very best to talk dutch in a very robotic American voice 👍.
+
+- Set `lang="nl"`
+
+The website doesn't have enough content to test if the screenreader really has any issues flow wise etc.
