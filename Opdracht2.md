@@ -1,4 +1,11 @@
 # Browser Technologies
+
+## Wireflows Lo-fi
+![Afbeelding 1](img/IMG_2952.jpg)
+![Afbeelding 2](img/IMG_4250.jpg)
+![Afbeelding 3](img/IMG_7745.jpg)
+![Afbeelding 4](img/IMG_9444.jpg)
+
 ## Opdracht 2 - Progressive Enhanced Browser Technologie
 Maak een demo op basis van een use case. Zorg dat alle gebruikers, met alle browsers, in iedere context minimaal de core functionaliteit te zien/horen/voelen krijgen. Bouw je demo in 3 lagen, volgens het principe van Progressive Enhancement. Gebruik als enhanced feature een (hippe, innovatieve, vooruitstrevende) Browser Technologie die je gaat onderzoeken op functionaliteit, toegankelijkheid en (browser) ondersteuning. Beschrijf de feature(s)/Browser Technologies, welke browser de feature(s) wel/niet ondersteunen, en de accessibility issues die zijn onderzocht.
 
