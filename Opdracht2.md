@@ -21,6 +21,9 @@ I started with making it work in HTML. I was very quick to understand it, but th
 
 So from making super rapid progression I have now halted to a standstill because everytime I think I have the solution the other feature breaks. So I keep yoyoing in between features.
 
+## Questions
+I currently have no questions.
+
 <!-- ### Doel van deze opdracht
 Het doel van deze opdracht is te leren hoe je een online functionaliteit zo kan maken met behulp van Progressive enhancement en Feature detectie dat deze het altijd doet ...
 
