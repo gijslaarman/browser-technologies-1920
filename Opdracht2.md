@@ -1,14 +1,24 @@
-# Browser Technologies
+# Making an image carousel with progressive enhancement.
+[Demo](bt.gijsbertcharles.com)
 
 ## Wireflows Lo-fi
 ![Afbeelding 3](img/IMG_7746.jpg)
 ![Afbeelding 4](img/IMG_9444.jpg)
 ![Afbeelding 1](img/IMG_2952.jpg)
 
-## Opdracht 2 - Progressive Enhanced Browser Technologie
-Maak een demo op basis van een use case. Zorg dat alle gebruikers, met alle browsers, in iedere context minimaal de core functionaliteit te zien/horen/voelen krijgen. Bouw je demo in 3 lagen, volgens het principe van Progressive Enhancement. Gebruik als enhanced feature een (hippe, innovatieve, vooruitstrevende) Browser Technologie die je gaat onderzoeken op functionaliteit, toegankelijkheid en (browser) ondersteuning. Beschrijf de feature(s)/Browser Technologies, welke browser de feature(s) wel/niet ondersteunen, en de accessibility issues die zijn onderzocht.
+## About this case
+So for this case I had to do two things:
+- Make a database to save the image data (such as the captions/alt text & filename). So I can keep track of the images.
+- Upload the image to a folder.
 
-### Doel van deze opdracht
+Now this is easily solved with [MongoDB](https://mongodb.com) & [Multer](https://www.npmjs.com/package/multer).
+MongoDB to create an easy database that works seamlessly with Nodejs. And multer to handle the uploaded files to store them inside a folder on the server.
+
+I started with making it work in HTML. I was very quick to understand it, but then it came: I had to be able to make a selection of the images to showcase only those inside a carousel, yeh.. Thanks for that. 
+
+So from making super rapid progression I have now halted to a standstill because everytime I think I have the solution the other feature breaks. So I keep yoyoing in between features.
+
+<!-- ### Doel van deze opdracht
 Het doel van deze opdracht is te leren hoe je een online functionaliteit zo kan maken met behulp van Progressive enhancement en Feature detectie dat deze het altijd doet ...
 
 
@@ -48,4 +58,4 @@ Schets eerst een wireflow en/of breakdown-schets met hoe de demo moet gaan werke
   - het heeft een gebruiksvriendelijke interface, met gebruikmaking van affordance en feedback op de interactieve elementen
   - met meest 'enhanced' versie is super vet, gaaf en h-e-l-e-maal te leuk om te gebruiken
 - Student kan de Basic functionaliteit van een use case doorgronden
-- Student kan uitleggen wat Progressive Enhancement en Feature Detectie is en hoe dit toe te passen in Web Development
+- Student kan uitleggen wat Progressive Enhancement en Feature Detectie is en hoe dit toe te passen in Web Development -->
