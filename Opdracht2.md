@@ -7,12 +7,15 @@
 ![Afbeelding 1](img/IMG_2952.jpg)
 
 ## About this case
-So for this case I had to do two things:
+So for this case I had to do three things:
 - Make a database to save the image data (such as the captions/alt text & filename). So I can keep track of the images.
 - Upload the image to a folder.
+- Render most of the content server side.
 
 Now this is easily solved with [MongoDB](https://mongodb.com) & [Multer](https://www.npmjs.com/package/multer).
 MongoDB to create an easy database that works seamlessly with Nodejs. And multer to handle the uploaded files to store them inside a folder on the server.
+
+Rendering server side is not super hard to do, but combine it with all the dynamic features that have to be implemented provided a challenge.
 
 I started with making it work in HTML. I was very quick to understand it, but then it came: I had to be able to make a selection of the images to showcase only those inside a carousel, yeh.. Thanks for that. 
 
