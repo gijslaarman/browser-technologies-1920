@@ -14,6 +14,6 @@ I've done research on testing two subjects:
 - Color / color blindness
 - Not using any cookies
 
-Check it out [here](research/opdracht1.1.md)
+Check it out [here](research/Ppdracht1.1.md)
 
-And tested out my own previously hacked prototype, you can see the results [here](research/opdracht1.2.md)
+And tested out my own previously hacked prototype, you can see the results [here](research/Opdracht1.2.md)
