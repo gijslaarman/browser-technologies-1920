@@ -1,12 +1,19 @@
 # Browser technologies
 
 ## Table of contents
-- [Live demo](#live-demo)
+1. [Live demo](#live-demo)
+2. [Installation](#installation)
 
 ## Live demo
 Check out my live demo on my server: [bt.gijsbertcharles.com](https://bt.gijsbertcharles.com)
 
-## Assignments
-1. [Opdracht 1.1](research/Opdracht1.1.md)
-2. [Opdracht 1.2](research/Opdracht1.2.md)
-3. [Opdracht 2 (WIP)](research/Opdracht2.md)
+## Installation
+
+## Research
+I've done research on testing two subjects:
+- Color / color blindness
+- Not using any cookies
+
+Check it out [here](research/opdracht1.1.md)
+
+And tested out my own previously hacked prototype, you can see the results [here](research/opdracht1.2.md)
