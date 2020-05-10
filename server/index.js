@@ -3,7 +3,7 @@ const app = express()
 const hbs = require('express-handlebars')
 const MongoClient = require('mongodb').MongoClient
 require('dotenv').config()
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 
 app.engine('hbs', hbs({ extname: 'hbs', defaultLayout: 'default', layoutsDir: `${__dirname}/views/layouts/` }))
 app.set('view engine', 'hbs')
@@ -16,7 +16,7 @@ app.use('/showcase', require('./routes/showcase'))
 app.listen(port, (err) => {
     if (err) throw new Error(err)
 
-    MongoClient.connect(`${process.env.DB_URL}:${process.env.DB_PORT}`, { useUnifiedTopology: true }, (err, client) => {
+    MongoClient.connect(`mongodb://localhost`, { useUnifiedTopology: true }, (err, client) => {
         if (err) throw new Error(err)
         db = client.db('BT')
     })
