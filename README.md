@@ -73,7 +73,6 @@ This gave me a global idea of how I wanted to achieve the goal. Since there's a 
 ## Progressive enhancement
 - In HTML you can upload, delete and select the images you want to show in the carousel. Only the carousel itself doesn't work.
 I should have split up the images per page where you can navigate easily through the pages with links.
-> I lost track here of the progressive enhancement, basically I had in mind that css works 99% of the time so it wouldn't be an issue.
 
 #### Example
 1. HTML
@@ -83,6 +82,7 @@ I should have split up the images per page where you can navigate easily through
 3. JS
 ![Full experience](./research/img/JS.jpg)
 
+> I lost track here of the progressive enhancement, basically I had in mind that css works 99% of the time so it wouldn't be an issue.
 
 - In CSS the carousel works, and you can scroll through the carousel without Javascript being used. It's not fancy and the user experience isn't optimal but it works.
 
